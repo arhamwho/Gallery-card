@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Pacifico&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #fdf6f0;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  padding: 60px 20px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #5c5470;
+}
+
+.subtitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2rem;
+  color: #b388eb;
+  margin-top: 10px;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.horizontal-gallery {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  min-width: max-content;
+  justify-content: center;
+}
+
+/* Standardized photo card */
+.photo {
+  flex: 0 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  padding: 10px;
+  width: 240px;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.03);
+}
+
+/* Fixed-size frame with aspect ratio */
+.photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* You can change to 1 / 1 for square, or 3 / 2, etc. */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.caption {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.1rem;
